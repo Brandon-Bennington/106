@@ -10,6 +10,8 @@ function sayGoodbye()
 
 function init(){
     console.log("hello world");
-    
+    sayHello();
+    sayGoodbye();
 }
 
+window.onload = init; 
