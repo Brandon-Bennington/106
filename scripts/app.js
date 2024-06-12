@@ -1,17 +1,14 @@
-function sayHello(){
-    console.log('Hello There');
-    return;
-}
-
-function sayGoodbye()
-{
-    console.log('Goodbye');
+function saveTask(){
+    console.log("Saving tasks");
 }
 
 function init(){
-    console.log("hello world");
-    sayHello();
-    sayGoodbye();
+    console.log("task manager");
+
+    //load data
+
+    //hook events
+    $("#btnSave").click(saveTask);
 }
 
-window.onload = init; 
+window.onload = init;

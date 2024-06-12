@@ -1,0 +1,13 @@
+main {
+    display:flex;
+}
+
+#list {
+    background-color:aqua;
+    flex: 3;
+}
+
+#form {
+    background-color:rgb(126, 126, 171);
+    flex: 5;
+}
