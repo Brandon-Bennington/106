@@ -1,13 +1,105 @@
+/* Main container */
 main {
-    display:flex;
+    display: flex;
+    padding-top: 3rem; 
+    padding-bottom: 3rem;
+    flex-direction: column;
+
 }
 
+/* Task list section */
 #list {
-    background-color:aqua;
+    background-color: #e0f7fa; /* Light aqua */
     flex: 3;
+    padding: 20px;
+    border-right: 1px solid #ccc;
 }
 
+#list h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+#tasks {
+    margin-top: 20px;
+}
+
+/* Task item */
+.task {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task h5 {
+    margin: 0 0 10px;
+    font-size: 1.2em;
+}
+
+.task p {
+    margin: 0 0 5px;
+    font-size: 1em;
+}
+
+.task label {
+    display: block;
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Task form section */
 #form {
-    background-color:rgb(126, 126, 171);
+    background-color: #f3e5f5; /* Light purple */
     flex: 5;
+    padding: 20px;
+}
+
+#form h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+#form form {
+    max-width: 600px;
+    margin: auto;
+}
+
+#form .form-label {
+    font-weight: bold;
+}
+
+#form .form-control {
+    margin-bottom: 15px;
+}
+
+#form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#form button:hover {
+    background-color: #0056b3;
+}
+
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+h2 {
+    color: #333;
+}
+
+label {
+    margin-bottom: 5px;
 }

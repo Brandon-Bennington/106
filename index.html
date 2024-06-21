@@ -12,80 +12,46 @@
         <div class="row">
             <section id="list" class="col-md-4 p-3">
                 <h2>Tasks List</h2>
-                <!-- Task list goes here -->
+                <div id="tasks"></div> <!-- Added this div to display tasks -->
             </section>
             <section id="form" class="col-md-8 p-3">
                 <h2>Task Form</h2>
-                <form>
+                <form id="taskForm">
                     <div class="mb-3">
-                        <label for="title" class="form-label">Title</label>
-                        <input type="text" class="form-control" id="title" required>
+                        <label for="txtTitle" class="form-label">Title</label>
+                        <input type="text" class="form-control" id="txtTitle" required>
                     </div>
                     <div class="mb-3">
-                        <label for="description" class="form-label">Description</label>
-                        <textarea class="form-control" id="description" rows="3" required></textarea>
+                        <label for="txtDescription" class="form-label">Description</label>
+                        <textarea class="form-control" id="txtDescription" rows="3" required></textarea>
                     </div>
                     <div class="mb-3">
-                        <label for="color" class="form-label">Color</label>
-                        <input type="color" class="form-control" id="color">
+                        <label for="selColor" class="form-label">Color</label>
+                        <input type="color" class="form-control" id="selColor">
                     </div>
                     <div class="mb-3">
-                        <label for="start-date" class="form-label">Start Date</label>
-                        <input type="date" class="form-control" id="start-date" required>
+                        <label for="selDate" class="form-label">Start Date</label>
+                        <input type="date" class="form-control" id="selDate" required>
                     </div>
                     <div class="mb-3">
-                        <label for="status" class="form-label">Status</label>
-                        <select class="form-control" id="status" required>
+                        <label for="selStatus" class="form-label">Status</label>
+                        <select class="form-control" id="selStatus" required>
                             <option value="not-started">Not Started</option>
                             <option value="in-progress">In Progress</option>
                             <option value="completed">Completed</option>
                         </select>
                     </div>
                     <div class="mb-3">
-                        <label for="budget" class="form-label">Budget</label>
-                        <input type="number" class="form-control" id="budget" required>
+                        <label for="numBudget" class="form-label">Budget</label>
+                        <input type="number" class="form-control" id="numBudget" required>
                     </div>
-                    <button type="submit" class="btn btn-primary">Add Task</button>
+                    <button type="submit" class="btn btn-primary" id="btnSave">Add Task</button>
                 </form>
             </section>
         </div>
     </main>
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="./scripts/task.js"></script>
     <script src="./scripts/app.js"></script>
 </body>
 </html>
-
-
-<!-- <section id="form">
-    <div class="mb-3">
-        <label class="form-label">Title</label>
-        <input type="text" class="form-control" id="txtTitle">
-      </div>
-    <div class="mb-3">
-        <label class="form-label">Description</label>
-        <textarea rows="4" class="form-control" id="txtDescription"></textarea>
-      </div>
-    <div class="mb-3">
-        <label class="form-label">Color</label>
-        <input type="color" class="form-control" id="selColor"></input>
-      </div>
-    <div class="mb-3">
-        <label class="form-label">Start Date</label>       
-        <input type="datetime-local" class="form-control" id="selDate"></input>
-      </div>
-<div class="mb-3">
-        <label class="form-label">Status</label>       
-        <select  class="form-control" id="selStatus">
-            <option value="new">New</option>
-            <option value="in-progress">In progress</option>
-            <option value="Completed">Completed</option>
-            <option value="Canceled">Canceled</option>
-        </select>
-      </div>
-      <div class="mb-3">
-        <label class="form-label">Budget</label>
-        <input type="number" class="form-control" id="numBudget"></input>
-      </div>
-      <button type="submit" id="btnSave">Save</button>
-  </section>
--->
